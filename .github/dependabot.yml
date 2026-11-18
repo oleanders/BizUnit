@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: nuget
+    directories:
+      - "/.nuget"
+      - "/Test/BizUnit.TestSteps.Tests"
+      - "/Test/BizUnit.Tests/SoapTestWebService"
+    schedule:
+      interval: daily
+    groups:
+      nuget:
+        patterns: ["*"]
+      nuget-security:
+        applies-to: security-updates
+        patterns: ["*"]
