@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: nuget
+    directories:
+      - "/.nuget"
+      - "/Test/BizUnit.TestSteps.Tests"
+      - "/Test/BizUnit.Tests/SoapTestWebService"
+    schedule:
+      interval: daily
